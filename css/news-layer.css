@@ -1,0 +1,4 @@
+.layui-layer-close { position: absolute; top: -50px; right: -50px;}
+.layui-layer-title { display: none;}
+.layui-layer-setwin a.layui-layer-min{ display: none;}
+.layui-layer-setwin a.layui-layer-max{ display: none;}

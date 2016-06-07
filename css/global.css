@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; outline: none; }
+a { text-decoration: none; -webkit-transition: ease 0.4s; -moz-transition: ease 0.4s; -ms-transition: ease 0.4s; -o-transition: ease 0.4s; transition: ease 0.4s; }
+a:hover { -webkit-transition: ease 0.4s; -moz-transition: ease 0.4s; -ms-transition: ease 0.4s; -o-transition: ease 0.4s; transition: ease 0.4s; }
+img { border: none; }
+a .img-scale{ -webkit-transition: ease 0.6s; -moz-transition: ease 0.6s; -ms-transition: ease 0.6s; -o-transition: ease 0.6s; transition: ease 0.6s;}
+a:hover .img-scale{ -moz-transform:scale(1.2); -webkit-transform:scale(1.2); -o-transform:scale(1.2); -webkit-transition: ease 0.6s; -moz-transition: ease 0.6s; -ms-transition: ease 0.6s; -o-transition: ease 0.6s; transition: ease 0.6s;}
+ol, ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+.f-fl { float: left; }
+.f-fr { float: right; }
+.dib{ display: inline-block; *display:inline; *zoom:1;}
+article, aside, dialog, footer, header, section, footer, nav, figure, menu { display: block; }
+.gradual{animation:gradual 1s;
+-webkit-animation:gradual 1s;
+-moz-animation:gradual 1s;
+-o-animation:gradual 1s;}
+@keyframes gradual{
+0% { opacity:0;}
+90% { opacity:0.9;}
+100% { opacity:1;}
+}
+@-webkit-keyframes gradual{
+0% { opacity:0;}
+90% { opacity:0.9;}
+100% { opacity:1;}
+}
+@-moz-keyframes gradual{
+0% { opacity:0;}
+90% { opacity:0.9;}
+100% { opacity:1;}
+}
+@-o-keyframes gradual{
+0% { opacity:0;}
+90% { opacity:0.9;}
+100% { opacity:1;}
+}

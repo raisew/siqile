@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>思圻乐</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link href="css/global.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/jquery.1.8.1.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/global.js"></script>
+		<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.js"></script>
+<![endif]-->
+		<!--head公共:over-->
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<script src="layer/layer.js"></script>
+
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header class="ind-header">
+			<div class="header-container">
+				<div class="logo"><span class="dib"></span><img src="images/logo.png" alt="思圻乐"></div>
+				<!--nav-->
+				<nav>
+					<div id="navBar">
+						<ul class="navbar clearfix">
+							<li class="m ind">
+								<h3><a href="index.html"><span>HOME</span>首页</a></h3>
+							</li>
+							<li class="m">
+								<h3><a href="company.html"><span>COMPANY</span>企业概括</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="company.html"><i></i>企业创始人</a></li>
+										<li><a href="company-profile.html"><i></i>企业简介</a></li>
+										<li><a href="company-cultrue.html"><i></i>企业文化</a></li>
+										<li><a href="company-strength.html"><i></i>产品优势</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="news.html"><span>NEWS</span>资讯动态</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="news.html"><i></i>新闻动态</a></li>
+										<li><a href="news.html"><i></i>美体学堂</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="brand.html"><span>BRAND</span>品牌展示</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="brand.html"><i></i>思圻乐</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="media.html"><span>MEDIA</span>媒体中心</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="media.html"><i></i>活动照片</a></li>
+										<li><a href="media-video.html"><i></i>视频短片</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="member.html"><span>MEMBER</span>经销商专区</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="member.html"><i></i>资料下载</a></li>
+										<li><a href="member-pwd.html"><i></i>修改密码</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="contact.html"><span>CONTACT</span>联系我们</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="contact.html"><i></i>联系方式</a></li>
+										<li><a href="contact-job.html"><i></i>人才招聘</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="block"></li>
+						</ul>
+
+					</div>
+					<script src="js/SuperSlide.2.1.js"></script>
+					<script>
+						var ind = 6; //判断栏目选中状态
+						$(function() {
+							var nav = $(".navbar");
+							var init = $(".navbar .m").eq(ind);
+							var block = $(".navbar .block");
+							block.css({
+								"left": init.position().left - 0
+							});
+							nav.hover(function() {},
+								function() {
+									block.stop().animate({
+											"left": init.position().left - 0
+										},
+										100);
+								});
+							$(".navbar").slide({
+								type: "menu",
+								titCell: ".m",
+								targetCell: ".sub",
+								delayTime: 300,
+								triggerTime: 0,
+								returnDefault: true,
+								defaultIndex: ind,
+								startFun: function(i, c, s, tit) {
+									block.stop().animate({
+											"left": tit.eq(i).position().left - 0
+										},
+										100);
+								}
+							});
+						});
+						$(function() {
+							$(".m").mouseover(function() {
+								$(".nav-show-bg").css("display", "block");
+							})
+							$(".m").mouseout(function() {
+								$(".nav-show-bg").css("display", "none");
+							})
+							$(".ind").mouseover(function() {
+								$(".nav-show-bg").css("display", "none");
+							})
+						})
+					</script>
+				</nav>
+				<div class="nav-show-bg"></div>
+				<!--nav:over-->
+				<div class="search">
+					<form action="" method="">
+						<input type="text" class="ss-txt" /><input type="submit" class="ss-btn" value="" />
+					</form>
+				</div>
+			</div>
+		</header>
+		<!--顶部:over-->
+		<div class="contact-mian">
+			<img src="images/map.jpg" width="100%" height="100%">
+		</div>
+		<div class="contact-susp">
+			<div class="susp-w">
+				<img src="images/contact-tel.png">
+				<div class="susp-w1">
+					<div class="susp-w2">0591-87522736</div>
+				</div>
+			</div>
+			<div class="susp-b">
+				<img src="images/contact-telphone.png">
+				<div class="susp-b1">
+					<div class="susp-b2">0591-87522736-807</div>
+				</div>
+			</div>
+			<div class="susp-w">
+				<img src="images/contact-mail.png">
+				<div class="susp-w1">
+					<div class="susp-w2">siqile2009@yahoo.cn</div>
+				</div>
+			</div>
+			<div class="susp-b">
+				<img src="images/contact-site.png">
+				<div class="susp-b1">
+					<div class="susp-b2">www.hksiqile.com</div>
+				</div>
+			</div>
+			<div class="susp-b">
+				<img src="images/contact-address.png">
+				<div class="susp-b1">
+					<div class="susp-b2">福州市台江区学军路79号富商世家3#一层</div>
+				</div>
+			</div>
+			<div class="susp-w">
+				<img src="images/contact-service.png">
+				<div class="susp-w1">
+					<div class="susp-w2">0591-87522736-801
+0591-87522736-802</div>
+				</div>
+			</div>		
+			<div class="susp-b">
+				<div class="susp-b1">
+					<div class="susp-b2">财务   0591-87522736-803
+前台   0591-87522736-805
+市场   0591-87522736-806</div>
+				</div>
+			</div>
+			<div class="susp-w" style="background-color: #ea68a2; cursor: pointer;" id="message">
+				<img src="images/contact-message.png">
+				<div class="susp-w1">
+					<div class="susp-w2" style="color: #fff;">在线留言</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--footer-->
+		<footer class="ind-footer">
+			<div class="footer-container">
+				<div class="footer-left">2010-2015 Copyright⊙福州广为网络科技有限公司 闽ICP备8888888号 &nbsp;&nbsp;技术支持：<a href="http://www.gnwai.com/" target="_blank">广为网络</a></div>
+				<div class="footer-right">
+					<ul>
+						<li class="gzwm">关注我们：</li>
+						<li>
+							<a href="#" class="a1"></a>
+						</li>
+						<li>
+							<a href="#" class="a2"></a>
+						</li>
+						<li>
+							<a class="a3"></a>
+							<div class="wxshow"><img src="ewm.jpg">
+								<h3>微信公众号</h3></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!--footer:over-->
+		<link href="css/news-layer.css" rel="stylesheet" />
+		<script>
+			$(document).ready(function() {
+				var h = $(".member-container").height();
+				$(".member-list").css("height", h - 80);
+				$(window).resize(function() {
+					var h = $(".member-container").height();
+					$(".member-list").css("height", h - 80);
+				})
+			})
+			$('#message').on('click', function() {
+				var id = $(this).attr('data-id');
+				layer.open({
+					type: 2,
+					title: '',
+					maxmin: true,
+					shadeClose: true, //点击遮罩关闭层
+					area: ['800px', '580px'],
+					content: ['contact-message.html','no']
+				});
+			});
+		</script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	</body>
+
+</html>

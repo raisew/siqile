@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>思圻乐</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link href="css/global.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet">
+		<script src="js/jquery.1.8.1.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/global.js"></script>
+		<!--[if lt IE 9]> 
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.js"></script>
+<![endif]-->
+		<!--head公共:over-->
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<link href="css/swiper.min.css" rel="stylesheet">
+		<link href="css/brand-swiper.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header class="ind-header">
+			<div class="header-container">
+				<div class="logo"><span class="dib"></span><img src="images/logo.png" alt="思圻乐"></div>
+				<!--nav-->
+				<nav>
+					<div id="navBar">
+						<ul class="navbar clearfix">
+							<li class="m ind">
+								<h3><a href="index.html"><span>HOME</span>首页</a></h3>
+							</li>
+							<li class="m">
+								<h3><a href="company.html"><span>COMPANY</span>企业概括</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="company.html"><i></i>企业创始人</a></li>
+										<li><a href="company-profile.html"><i></i>企业简介</a></li>
+										<li><a href="company-cultrue.html"><i></i>企业文化</a></li>
+										<li><a href="company-strength.html"><i></i>产品优势</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="news.html"><span>NEWS</span>资讯动态</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="news.html"><i></i>新闻动态</a></li>
+										<li><a href="news.html"><i></i>美体学堂</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="brand.html"><span>BRAND</span>品牌展示</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="brand.html"><i></i>思圻乐</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="media.html"><span>MEDIA</span>媒体中心</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="media.html"><i></i>活动照片</a></li>
+										<li><a href="media-video.html"><i></i>视频短片</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="member.html"><span>MEMBER</span>经销商专区</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="member.html"><i></i>资料下载</a></li>
+										<li><a href="member-pwd.html"><i></i>修改密码</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="m">
+								<h3><a href="contact.html"><span>CONTACT</span>联系我们</a></h3>
+								<div class="sub">
+									<ul>
+										<li><a href="contact.html"><i></i>联系方式</a></li>
+										<li><a href="contact-job.html"><i></i>人才招聘</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="block"></li>
+						</ul>
+
+					</div>
+					<script src="js/SuperSlide.2.1.js"></script>
+					<script>
+						var ind = 3; //判断栏目选中状态
+						$(function() {
+							var nav = $(".navbar");
+							var init = $(".navbar .m").eq(ind);
+							var block = $(".navbar .block");
+							block.css({
+								"left": init.position().left - 0
+							});
+							nav.hover(function() {},
+								function() {
+									block.stop().animate({
+											"left": init.position().left - 0
+										},
+										100);
+								});
+							$(".navbar").slide({
+								type: "menu",
+								titCell: ".m",
+								targetCell: ".sub",
+								delayTime: 300,
+								triggerTime: 0,
+								returnDefault: true,
+								defaultIndex: ind,
+								startFun: function(i, c, s, tit) {
+									block.stop().animate({
+											"left": tit.eq(i).position().left - 0
+										},
+										100);
+								}
+							});
+						});
+					</script>
+					<script>
+						$(function() {
+							$(".m").mouseover(function() {
+								$(".nav-show-bg").css("display", "block");
+							})
+							$(".m").mouseout(function() {
+								$(".nav-show-bg").css("display", "none");
+							})
+							$(".ind").mouseover(function() {
+								$(".nav-show-bg").css("display", "none");
+							})
+						})
+					</script>
+				</nav>
+				<div class="nav-show-bg"></div>
+				<!--nav:over-->
+				<div class="search">
+					<form action="" method="">
+						<input type="text" class="ss-txt" /><input type="submit" class="ss-btn" value="" />
+					</form>
+				</div>
+			</div>
+		</header>
+		<!--顶部:over-->
+		<div class="brand-main">
+			<div class="brand-container">
+				<div class="brand-logo"><img src="images/logo-brand.png"></div>
+				<div class="brand-font">
+					三合一的力学组合，可均匀及修饰胸、腰、腹三部位的曲线。<br /> 扶正脊椎，消除疲劳，配合丰富弹性的法国蕾丝，科技与人性的结合，将女性的身形调整至完美动人的境界。
+				</div>
+				<div class="brand-menu">
+					<div class="brand-menu-auto">高腰调整裤 <i>&nu;</i></div>
+					<div class="brand-menu-list">
+						<ul>
+							<li><a href="#">高腰调整品牌一</a></li>
+							<li><a href="#">高腰调整品牌二</a></li>
+							<li><a href="#">高腰调整品牌三</a></li>
+							<li><a href="#">高腰调整品牌四</a></li>
+						</ul>
+					</div>					
+				</div>
+				<div class="brand-list">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp1.jpg" rel="gallery"><img src="images/pic-pp1.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp2.jpg" rel="gallery"><img src="images/pic-pp2.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp3.jpg" rel="gallery"><img src="images/pic-pp3.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp4.jpg" rel="gallery"><img src="images/pic-pp4.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp1.jpg" rel="gallery"><img src="images/pic-pp1.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp2.jpg" rel="gallery"><img src="images/pic-pp2.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp3.jpg" rel="gallery"><img src="images/pic-pp3.jpg"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="brand-box">
+										<a href="images/pic-pp4.jpg" rel="gallery"><img src="images/pic-pp4.jpg"></a>
+									</div>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				
+			</div>
+		</div>
+		<!--footer-->
+		<footer class="ind-footer">
+			<div class="footer-container">
+				<div class="footer-left">2010-2015 Copyright⊙福州广为网络科技有限公司 闽ICP备8888888号 &nbsp;&nbsp;技术支持：<a href="http://www.gnwai.com/" target="_blank">广为网络</a></div>
+				<div class="footer-right">
+					<ul>
+						<li class="gzwm">关注我们：</li>
+						<li>
+							<a href="#" class="a1"></a>
+						</li>
+						<li>
+							<a href="#" class="a2"></a>
+						</li>
+						<li>
+							<a class="a3"></a>
+							<div class="wxshow"><img src="ewm.jpg">
+								<h3>微信公众号</h3></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!--footer:over-->
+		<script>
+			$(document).ready(function() {
+				$(".brand-menu-auto").on("click", function() {
+					$(".brand-menu-list").toggle();
+				})
+				var h = $(".brand-box").height();
+				$(".brand-box").css("widht","h*454/274");
+				$(window).resize(function(){
+					var h = $(".brand-box").height();
+			  	$(".brand-box").css("widht","h*454/274");
+				})
+			});
+		</script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				//pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 4,
+				paginationClickable: true,
+				spaceBetween: 0,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+		<script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+
+	</body>
+
+</html>
